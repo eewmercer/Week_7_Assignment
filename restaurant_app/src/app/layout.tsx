@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Page from './page'
+import Navigation from './navigation'
 
 export const metadata: Metadata = {
   title: "Create Menu System",
@@ -13,7 +13,7 @@ export default function RootLayout({children}: Readonly<{
   return (
     <html lang="en">
       <body>
-        <Page/>
+        <Navigation/>
         {children}
       </body>
     </html>
